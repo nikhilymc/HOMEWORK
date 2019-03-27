@@ -17,16 +17,25 @@
           if(c=="addition")
           {
               x=a+b;
-              console.log(x);
+              
           }else if(c=="substraction")
           {
               x=a-b;
-              console.log(x);
-          }else{
-             console.log("invalid operation");
+            
+          }
+          else if(c=="multiplication")
+          {
+              x=a*b;
+            
+          }else if(c=="division")
+          {
+              x=a/b;
+            
+          }
+             console.log(x);
           }
               
-            }
+            
             </script>
 </head>
 <body>
@@ -44,7 +53,8 @@
                             <td>opration</td>
                             <td><select id="operation"><option>addition</option>
                             <option >substraction</option>
-                        <option>multiplication</option></select></td>
+                        <option>multiplication</option>
+                    <option >division</option></select></td>
                         </tr>
                     <tr>
                         <td></td>
