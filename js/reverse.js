@@ -1,11 +1,11 @@
-var x =100;
-var z = 0;
-var y;
-while( x != 0){
-y = x % 10;
+var num =123;
+var rev = 0;
+var rem=0;
+while( num > 0){
+rem = num % 10;
 
- z =  z * 10 + y;
- x = x / 10 ;
+rev =  rev * 10 + rem;
+ num =parseInt(num / 10) ;
 
 }
-console.log(z);
+console.log(rev);
