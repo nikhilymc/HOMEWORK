@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+            function test()
+            {
+             var a=parseInt(document.getElementById("num1").value);
+             var b= parseInt(document.getElementById("num2").value);
+             var c=document.getElementById("operation").value;
+             console.log(a);
+             console.log(b);
+             console.log(c);
+          if(c=="addition")
+          {
+              x=a+b;
+              console.log(x);
+          }else if(c=="substraction")
+          {
+              x=a-b;
+              console.log(x);
+          }else{
+             console.log("invalid operation");
+          }
+              
+            }
+            </script>
+</head>
+<body>
+    <form >
+            <table>operation
+                    <tr>
+                        <td> num1</td>
+                        <td><input type="text" name="" id="num1"></td>
+                    </tr>
+                    <tr>
+                        <td>num2</td>
+                        <td><input type="text" name="" id="num2"></td>
+                    </tr>
+                    <tr>
+                            <td>opration</td>
+                            <td><select id="operation"><option>addition</option>
+                            <option >substraction</option>
+                        <option>multiplication</option></select></td>
+                        </tr>
+                    <tr>
+                        <td></td>
+                            <td> <button type ="button" onclick="test()">submit</button></td>
+                    </tr>
+                    </table>
+                </form>
+                
+    </form>
+    </body>
+</html>
