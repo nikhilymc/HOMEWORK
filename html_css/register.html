@@ -7,9 +7,54 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
 	<link rel="stylesheet" href="style.css">
+	<script>
+	function read(){
+		var name=document.getElementById("fname").value;
+		var lastname=document.getElementById("lname").value;
+		var age=document.getElementById("age").value;
+		var date=document.getElementById("dob").value;
+		var gender=document.getElementById("gender").value;
+		var religion=document.getElementById("religion").value;
+		var address=document.getElementById("address").value;
+		var pincode=document.getElementById("pincode").value;
+		var district=document.getElementById("district").value;
+		var qual=document.getElementById("qual").value;
+		var guard=document.getElementById("gname").value;
+		var blood=document.getElementById("bgroup").value;
+		var email=document.getElementById("mail").value;
+		var number=document.getElementById("number").value;
+		var username=document.getElementById("uname").value;
+		var password=document.getElementById("password").value;
+		var cpassword=document.getElementById("cpassword").value;
+		console.log(name);
+		console.log(lastname);
+		console.log(age);
+		console.log(date);
+		console.log(gender);
+		console.log(religion);
+		console.log(address);
+		console.log(pincode);
+		console.log(district);
+		console.log(qual);
+		console.log(blood);
+		console.log(email);
+		console.log(number);
+		console.log(username);
+		console.log(password);
+		console.log(cpassword);
+
+
+
+
+
+
+
+
+	}
+	</script>
 </head>
 <body>
-    
+   <form>
 <div class="container">
 	<div class="row">
 		<div class="col col-12 col-sm-4">
@@ -24,44 +69,45 @@
 					  </div>
 
 		</div>
+	
 		<div class="col col-12 col-sm-4">
 			<table class="table">
 				<tr>
 					<td>FULL NAME</td>
-					<td><input type="text" name=""></td>
+					<td><input type="text" name="" id="fname"></td>
 				</tr>
 				<tr>
 					<td>LAST NAME</td>
-					<td><input type="text" name=""></td>
+					<td><input type="text" name="lname" id="lname"></td>
 				</tr>
 					<tr>
 					<td>AGE</td>
-					<td><input type="text" name=""></td>
+					<td><input type="text" name="age" id="age"></td>
 				</tr>
 				<tr>
 					<td>DOB</td>
-					<td> <input type="date" name=""></td>
+					<td> <input type="date" name="dob" id="dob"></td>
 				</tr>
 					<tr>
 					<td>GENDER</td>
-					<td><input type="radio" name="">male<input type="radio" name="">female</td>
+					<td><input type="radio" name="" id=gender"">male<input type="radio" name="" id="gender">female</td>
 				</tr>
 					<tr>
 					<td>RELIGION</td>
-					<td><input type="text" name=""></td>
+					<td><input type="text" name="" id="religion"></td>
 				</tr>
 				
 				<tr>
 					<td>ADDRESS</td>
-					<td><input type="textarea" name=""></td>
+					<td><input type="textarea" name="" id="address"></td>
 				</tr>
 					<tr>
 					<td>PINCODE</td>
-					<td><input type="number" name=""></td>
+					<td><input type="number" name="" id="pincode"></td>
 				</tr>
 				<tr>
 					<td>DISTRICT</td>
-					<td><select><option>kasaragode</option>
+					<td><select id="district"><option>kasaragode</option>
 					<option>kannur</option>
 					<option>kozhikode</option>
 					<option>vayanad</option>
@@ -78,39 +124,39 @@
 				</tr>
 					<tr>
 					<td>QUALIFICATION</td>
-					<td><input type="text" name=""></td>
+					<td><input type="text" name="" id="qual"></td>
 				</tr>
 				<tr>
 					<td>GUARDIAN NAME</td>
-					<td><input type="text" name=""></td>
+					<td><input type="text" name="" id="gname"></td>
 				</tr>
 					<tr>
 					<td>BLOOD GROUP</td>
-					<td><input type="text" name=""></td>
+					<td><input type="text" name="bgroup" id="bgroup"></td>
 				</tr>
 				<tr>
 					<td>EMAIL</td>
-					<td><input type="email" name=""></td>
+					<td><input type="email" name="" id="mail"></td>
 				</tr>
 					<tr>
 					<td>PHONE NUMBER</td>
-					<td><input type="number" name=""></td>
+					<td><input type="number" name="" id="number"></td>
 				</tr>
 				<tr>
 					<td>USERNAME</td>
-					<td><input type="text" name=""></td>
+					<td><input type="text" name="" id="uname"></td>
 				</tr>
 					<tr>
 					<td>PASSWORD</td>
-					<td><input type="password" name=""></td>
+					<td><input type="password" name="" id="password"></td>
 				</tr>
 				<tr>
 					<td>CONFIRM PASSWORD</td>
-					<td><input type="password" name=""></td>
+					<td><input type="password" name="" id="cpassword"></td>
 				</tr>
 				<tr>
 					<td></td>
-					<td><button class="btn btn-primary">REGISTER</button></td>
+					<td><button type="button" class="btn btn-primary" onclick="read()">REGISTER</button></td>
 				</tr>
 				<tr>
 					<td></td>
@@ -126,6 +172,6 @@
 		</div>
 		
 	</div>
-</div>
+</div></form>
 </body>
 </html>
