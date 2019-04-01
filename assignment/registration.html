@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ 
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+  body{
+    background-color:azure;
+  }
+        </style>
+</head>
+<body>
+       
+          
+             <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse-target">
+                    <span class="navbar-toggler-icon"></span> 
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapse-target">
+                    <a class="navbar-brand"><img src="images/abc.jpg" width="50" height="50"></a>
+                    <span class="navbar-text" >ICT Academy of Kerala</span>
+                    <ul class="navbar-nav">
+                      
+                     <!--- <li class="nav-item dropdown">
+                        <a  class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target" href="">dropedown
+                          <span class="caret"></span>
+                        </a>
+                        <div class="dropdown-menu" area-labelledby="dropdown_target">
+                         <ul class="navbar-nav">
+                          <a class="dropdown-item">study</a>
+                          <div class="dropdown-divider"></div> 
+                          <a class="dropdown-item">study</a>
+                          <a class="dropdown-item">study</a>
+                          <a class="dropdown-item">study</a>
+                          </ul>
+                        </div>-->
+                  </li>
+                  <li class="nav-item">
+                  <a  class="nav-link primary-active" href="index.html">Home</a>
+                 </li>
+                      <li class="nav-item">
+                          <a  class="nav-link" href="">About</a>
+                      </li>
+                      <li class="nav-item">
+                          <a  class="nav-link" href="registration.html">Services</a>
+                      </li>
+                    </ul>
+                    </div>
+                    <form class="form-inline my-2 my-lg-0">
+                      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                  </nav>
+                    
+                  
+    <div class="container-fluid">
+    <div class="row">
+                <div class="col col-12 col-sm-4 mt-5 p-3">
+                                    <div class="jumbotron">
+                                            <h1 class="display-4">Hello, students!</h1>
+                                            <p class="lead"></p>
+                                            <hr class="my-4">
+                                            <p>ARE YOU READY </p>
+                                            <p class="lead">
+                                              <a class="btn btn-primary btn-lg" href="login.html" role="button">LOGIN </a>
+                                            </p>
+                                          </div>   
+                                          </div>          
+                             <div class="col col-12 col-sm-4">
+                                 <form>
+                             <h1  align="center">REGISTRATION</h1>
+        <table class="table " >
+                 <tr>
+                <td>FULL NAME</td>
+                    <td><input type="text" name="" id="fname" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" required></td>
+                         </tr>
+                             <tr>
+                       <td>LAST NAME</td>
+                              <td><input type="text" name="lname"  pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" required></td>
+                             </tr>
+                                                    
+                          <tr>
+                              <td>DOB</td>
+                                                    <td> <input type="date" name="dob" id="dob" required></td>
+                                                </tr>
+                                                    <tr>
+                                                    <td>GENDER</td>
+                                                    <td><input type="radio" name="" id="gender">male<input type="radio" name="" id="gender">female</td>
+                                                </tr>
+                                                    
+                                                
+                                                <tr>
+                                                    <td>ADDRESS</td>
+                                                    <td><input type="textarea" name="" id="address" required></td>
+                                                </tr>
+                                                    <tr>
+                                                    <td>PINCODE</td>
+                                                    <td><input type="text"    name="" id="pincode" pattern="[0-9]{6}"required></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>DISTRICT</td>
+                                                    <td><select id="district"><option>select</option>
+                                                        <option>kasaragod"></option>
+                                                    <option>kannur</option>
+                                                    <option>kozhikode</option>
+                                                    <option>vayanad</option>
+                                                    <option>malappuram</option>
+                                                    <option>thrissur</option>
+                                                    <option>palakkad</option>
+                                                    <option>ernakulam</option>
+                                                    <option>alapuzha</option>
+                                                    <option>kottayam</option>
+                                                    <option>idukki</option>
+                                                    <option>pathanamthitta</option>
+                                                    <option>kollam</option>
+                                                    <option>thiruvananthapuram</option></select></td>
+                                                </tr>
+                                                  
+                                                
+                                                <tr>
+                                                    <td>EMAIL</td>
+                                                    <td><input type="email" name="" id="mail"   required></td>
+                                                </tr>
+                                                    <tr>
+                                                    <td>PHONE NUMBER</td>
+                                                    <td><input type="text" name="" id="number" pattern="[6789]{1}[0-9]{9}"required></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>USERNAME</td>
+                                                    <td><input type="text" name="" id="uname" pattern="^[A-Za-z0-9_]{1,15}$"
+                                                        required></td>
+                                                </tr>
+                                                    <tr>
+                                                    <td>PASSWORD</td>
+                 <td><input type="password" name="" id="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                                                required></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>CONFIRM PASSWORD</td>
+                                                    <td><input type="password" name="" id="cpassword" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td><button type="submit" class="btn btn-primary" onclick="read()">REGISTER</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td><a href="login.html" class="alert alert-primary" >LOGIN</a></td>
+                                                </tr>
+                                            </table>
+                                        
+                                            </div>
+                                            
+                                        </div>
+                                    </form>
+                                    <footer>
+                                            <div class="container-fluid p-5 black border-2" >
+                                              <div class="row">
+                                                <div class="col-sm-4">
+                                                  <div class="d-flex flex-column white" >
+                                                    <h5>Newslatter</h5>
+                                                    <p class="white">Enter your email to subscribe to this blog and get notification of every new blog post</p>
+                                                    <div class="form-control">
+                                                      <input type="text" placeholder="Email">
+                                                    </div>
+                                                    <button type="button" class="btn btn-info mt-3">subscribe</button>
+                                          
+                                                  </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="d-flex flex-column p-3 border-2 white">
+                                                      <h5>Categories</h5>
+                                                      <ul>
+                                                        <li>Traveling</li>
+                                                        <li>technologies</li>
+                                                        <li>news</li>
+                                                      </ul>
+                                                </div>
+                                              </div>
+                                              <div class="col-sm-4">
+                                                  <div class="d-flex flex-column  white">
+                                                    <h5>Comtact Us</h5>
+                                                    <div class="form-group">
+                                                      <input type="text" class="form-control" placeholder="name">
+                                                      <input type="email" class="form-control mt-2" placeholder="email">
+                                                      <textarea class="form-control mt-1"rows="3"></textarea>
+                                                      <button type="button" class="btn btn-info mt-2 float-right">subscribe</button>
+                                                    </div>
+                                              </div>
+                                            </div>
+                                            </div>
+                                          </footer>
+</body>
+</html>
