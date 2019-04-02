@@ -1,0 +1,5 @@
+x=y=z=100
+print x,y,z
+name,age,location="ajay",24,"cochi"
+print name, age,location
+print 5.0/2

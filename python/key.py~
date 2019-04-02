@@ -1,0 +1,8 @@
+name=raw_input("enter ur name")
+print name
+age=raw_input("enter ur age")
+print age
+mark=raw_input("enter ur mark")
+print age
+
+
