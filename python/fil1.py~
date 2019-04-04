@@ -1,0 +1,11 @@
+import pickle
+n=int(input('enter the num'))
+f=open('test.dat','w')
+for i in range(n):
+    m=int(input('enter the num'))
+    pickle.dumb(m,f)
+f.close
+f=open('test.dat','r')
+for i in range(n):
+    print pickle.load(f)
+
