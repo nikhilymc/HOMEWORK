@@ -8,9 +8,9 @@ app.get('/home',(req,res)=>{
 });
 
 app.get('/contact',(req,res)=>{
-    res.send("contact page");
+    res.send('[{"name":"nikhil","age":25},{"name":"kohli","age":26}]');
 });
 app.get('/home/contact',(req,res)=>{
-    res.send("my contact page");
+    res.send("<h1>my contact page</h1>");
 });
 app.listen(5000);
