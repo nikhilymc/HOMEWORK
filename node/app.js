@@ -8,22 +8,22 @@ app.use(express.urlencoded());
 app.post('/data',(req,res)=>{
   var name=req.body.name;
   var address=req.body.addr;
-  var age=req.body.age;
+  
   var place=req.body.place;
+  var mobile=req.body.mobile;
   var mail =req.body.mail;
-res.send(name);
-res.send(address);
-  console.log(name,address,age,place,mail);
+
+  console.log(name,address,place,mobile,mail);
 
 });
 app.get('/',(req,res)=>{
-    res.render("index");
+    res.render("index",{name:'nikhil'});
 });
 app.get('/home',(req,res)=>{
     res.send("welcome");
 });
 app.get('/about',(req,res)=>{
-    res.render("about");
+    res.render("about",{name:'nikhil'});
 });
 app.get('/contact',(req,res)=>{
 
@@ -40,4 +40,6 @@ app.get('/gallery',(req,res)=>{
 
     res.render("gallery");
 });
-app.listen(5000);
+app.listen(5000,()=>{
+    console.log('running state');
+});
